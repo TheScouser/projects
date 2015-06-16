@@ -1,0 +1,20 @@
+[EMMA v2.0.5312 report, generated Mon May 13 18:14:56 EEST 2013]
+-------------------------------------------------------------------------------
+OVERALL COVERAGE SUMMARY:
+
+[class, %]	[method, %]	[block, %]	[line, %]	[name]
+71%  (35/49)!	52%  (87/167)!	50%  (1888/3798)!	48%  (344.3/715)!	all classes
+
+OVERALL STATS SUMMARY:
+
+total packages:	1
+total classes:	49
+total methods:	167
+total executable files:	11
+total executable lines:	715
+
+COVERAGE BREAKDOWN BY PACKAGE:
+
+[class, %]	[method, %]	[block, %]	[line, %]	[name]
+71%  (35/49)!	52%  (87/167)!	50%  (1888/3798)!	48%  (344.3/715)!	org.elsys.themp
+-------------------------------------------------------------------------------

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res/com.example.filechooser"
+    android:id="@+id/Space1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/listview_playlists"
+         android:layout_width="match_parent"
+        android:layout_height="415dp" >
+    </ListView>
+
+    <Button
+        android:id="@+id/button_create_new_playlist"
+           android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Create New!" />
+
+</LinearLayout>

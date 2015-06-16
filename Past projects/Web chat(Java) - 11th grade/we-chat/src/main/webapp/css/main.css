@@ -1,0 +1,606 @@
+/*
+ * Name: 	WECHAT 
+ * App URI: http://www.xavortm.com/weChat
+ * About: 	web app developed by Alexander Dimitrov and Dimitar Borisov.
+ * Version: Pre-Alpha 0.1
+ * --------------------------------------------------------------------------
+ * HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+	color: #222;
+}
+
+html {
+	font-size: 1em;
+	line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+::selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #f0f0f0;
+	margin: 1em 0;
+	padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+	vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+	resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+	margin: 0.2em 0;
+	background: #000;
+	color: #999;
+	padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/*
+ * Content:
+ * ========
+ * 1. Layout
+ * 2. Typography
+ * 3. Header
+ * 4. Main content
+ * 4.1 Buttons and other elements
+ */
+
+/*
+ * 1. Layout stylings
+ * --------------------------------------------------------------------------
+ */
+
+/*
+ * Set the footer to stick to the end of the page when the content
+ * is less then the windows size.
+ */
+
+body {
+	height: 100%;
+	position: relative;
+}
+
+html {
+	height: 100%;
+}
+
+#site-footer {
+	/*position: absolute;*/
+	bottom: 0;
+	width: 100%;
+	height: 40px; /* Height of the footer */
+	background: #6cf;
+}
+
+.container {
+	max-width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#site-content {
+	min-height: 238px;
+}
+
+/*
+ * 2. Typography stylings
+ * --------------------------------------------------------------------------
+ */
+
+::selection {
+	background: #333;
+	color: white;
+}
+
+body {
+	font-family: "Open Sans", "Helvetiva Neue", Arial;
+	font-size: 12px;
+	line-height: 1.8em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+	color: #3e4246;
+}
+
+h1 { font-size: 22px; }
+h2 { font-size: 18px; }
+h3 { font-size: 16px; }
+h4 { font-size: 14px; }
+h5 { font-size: 12px; }
+h6 { font-size: 10px; }
+
+a {
+	color: #007eff;
+	text-decoration: none;
+	/* Animation on hover */
+	-moz-transition:.3s ease-in; 
+	-webkit-transition:.3s ease-in; 
+	transition:.3s ease-in;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #009cff;
+}
+
+
+/*
+ * 3. Header style
+ * --------------------------------------------------------------------------
+ */
+
+/**
+ * Slider styles. Currently only a static image is shown. Later in time
+ * there can be added slider to show diferent features.
+ */
+#main-slider {
+	background: url(../img/background.png) no-repeat;
+	height: 484px;
+	position: relative;
+}
+
+#main-slider .content {
+	width: 50%;
+	height: 50%;
+	overflow: auto;
+	color: white;
+	text-align: center;
+}
+
+#main-slider .content .welcome-text {
+	font-size: 33px;
+	margin-bottom: 0;
+	color: white;
+	margin-top: 60px;
+}
+
+#main-slider .content .welcome-text-small {
+	color: #aaa;
+}
+
+
+#main-slider .content .btn {
+	box-shadow: none;
+	margin-top: 20px;
+}
+
+#site-header {
+	border-bottom: 1px solid #f0f0f0;
+	margin-bottom: 40px;
+}
+
+#site-header.titlebar {
+	border-bottom: none;
+}
+
+#site-header .site-logo a {
+	background: url("../img/logo.png") no-repeat top left;
+	/* The custom logo settings */
+	width: 149px;
+	height: 43px;
+	text-indent: -9999px;
+	display: block;
+}
+
+.primary-navigation {
+	margin-top: 3px;
+}
+
+.primary-navigation li {
+	display: block;
+	float: left;
+}
+
+.primary-navigation li a {
+	color: #999;
+	text-transform: uppercase;
+	padding: 1em;
+	display: block;
+}
+
+.primary-navigation li a:hover {
+	color: #343434;
+
+	/* Stop the animation. */
+	-moz-transition:.0s ease-out; 
+	-webkit-transition:.0s ease-out; 
+	transition:.0s ease-out;
+}
+
+.site-titlebar {
+	background: url(../img/background-titlebar.png) no-repeat;
+	min-height: 100px;
+	margin-bottom: 40px;
+}
+
+.site-titlebar .container {
+	padding: 25px;
+}
+
+.site-titlebar .user-image {
+	display: inline-block;
+	border-radius: 50%;
+	/* The default small profile image size */
+	height: 32px;
+	width: 32px;
+	margin-right: 15px;
+	opacity: 0.8;
+}
+
+.site-titlebar .user-image:hover {
+	opacity: 1;
+}
+
+.site-titlebar .loggedin-user {
+	display: inline-block;
+	color: #888;
+	font-weight: normal;
+}
+
+.site-titlebar .loggedin-user .username {
+	color: white;
+}
+
+.site-titlebar .btn.medium {
+	margin-top: 10px;
+}
+
+.page-head {
+	/*margin-bottom: 40px;*/
+}
+
+.page-head h1 {
+	display: inline-block;
+	margin: 0;
+}
+
+.page-head .searchform {
+	margin-top: 1px;
+}
+
+.page-head #searchform {
+	background: url("../img/icon-search.png") no-repeat center right 10px;
+	padding-right: 30px;
+}
+
+.page-head label {
+	margin-right: 10px;
+	color: #999;
+}
+
+/*
+ * 4. Main content stylings
+ * --------------------------------------------------------------------------
+ */
+
+.welcome-steps {
+	margin: 60px 0;
+	position: relative;
+	/* Hardcoded */
+	min-height: 100px;
+}
+
+.welcome-steps .content {
+	position: absolute;
+	top: 0;
+	left: 50px;
+}
+
+.welcome-steps .circle {
+	margin-top: 20px;
+}
+
+.welcome-steps h4 {
+	margin: 0 0 10px 0;
+	font-size: 16px;
+}
+
+.welcome-steps .content p {
+	margin: 0;
+	color: #999;
+}
+
+/*
+ * Design the chatrooms listing.
+ */
+
+.chatrooms {
+	font-weight: normal;
+	margin-top: -20px;
+	margin-bottom: 40px;
+}
+
+.chatrooms ,
+.chatrooms tr,
+.chatrooms th,
+.events,
+.events th {
+	border: none;
+	font-size: 14px;
+	font-weight: normal;
+	color: #a2a29d;
+}
+
+.chatrooms a,
+.events a {
+	color: #333;
+}
+
+.chatrooms a:hover,
+.events a:hover {
+	color: #3b9cff;
+}
+
+.chatrooms tr,
+.events tr {
+	border-bottom: 1px solid #f0f0f0;
+	-moz-transition:.1s ease-in; 
+	-webkit-transition:.1s ease-in; 
+	transition:.1s ease-in;
+}
+
+.chatrooms tr:hover, 
+.events tr:hover {
+	background: #f9f9f9;
+	-moz-transition:.0s ease-out; 
+	-webkit-transition:.0s ease-out; 
+	transition:.0s ease-out;
+}
+
+.chatrooms .number {
+	width: 25px;
+}
+
+.chatrooms .name {
+	width: 60%
+}
+
+.chatrooms .active {
+	width: 10px;
+}
+
+.chatrooms .heading-row {
+	color: #999;
+	font-weight: bold !important;
+}
+
+.chatrooms .heading-row:hover {
+	background: #fff;
+}
+
+.searchResult {
+	background: red;
+}
+.incoming-events {
+	margin-left: 0 !important;
+}
+
+.events {
+	padding: 40px;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+.about-area {
+	font-size: 14px;
+	line-height: 2em;
+	margin-right: 0 !important;
+	margin-left: 30px !important;
+}
+
+.create-user {
+	color: white;
+	display: inline-block;
+}
+
+.register-form {
+	width: 400px;
+	color: #aaa;
+}
+
+.register-form label {
+	width: 80px;
+	display: inline-block;
+	color: black;
+}
+
+.register-form input {
+	width: 220px;
+	display: inline-block;
+}
+
+.register-form .register {
+	margin-top: 20px;
+	border-radius: 5px;
+}
+
+/*
+ * 5. Footer
+ * --------------------------------------------------------------------------
+ */
+#site-footer {
+	background: #384e88;
+	padding: 40px 0;
+	display: block;
+	overflow: hidden;
+	color:white;
+	text-align: center;
+	margin-top: 40px;
+}
+
+
+/*
+ * PonyFag styles. Yes, there are some of these too, kill me.
+ */
+
+span.pony {
+	width: 22px;
+	height: 18px;
+	display: inline-block;
+	background: url("../img/p/standart.png");
+	margin: 0 5px;
+}
+
+span.pony.a {
+	background: url("../img/p/a.png");
+}
+
+span.pony.b {
+	background: url("../img/p/b.png");
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+	/* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+	   (-o-min-device-pixel-ratio: 5/4),
+	   (-webkit-min-device-pixel-ratio: 1.25),
+	   (min-resolution: 120dpi) {
+	/* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+	* {
+		background: transparent !important;
+		color: #000 !important; /* Black prints faster: h5bp.com/s */
+		box-shadow: none !important;
+		text-shadow: none !important;
+	}
+
+	a,
+	a:visited {
+		text-decoration: underline;
+	}
+
+	a[href]:after {
+		content: " (" attr(href) ")";
+	}
+
+	abbr[title]:after {
+		content: " (" attr(title) ")";
+	}
+
+	/*
+	 * Don't show links for images, or javascript/internal links
+	 */
+
+	.ir a:after,
+	a[href^="javascript:"]:after,
+	a[href^="#"]:after {
+		content: "";
+	}
+
+	pre,
+	blockquote {
+		border: 1px solid #999;
+		page-break-inside: avoid;
+	}
+
+	thead {
+		display: table-header-group; /* h5bp.com/t */
+	}
+
+	tr,
+	img {
+		page-break-inside: avoid;
+	}
+
+	img {
+		max-width: 100% !important;
+	}
+
+	@page {
+		margin: 0.5cm;
+	}
+
+	p,
+	h2,
+	h3 {
+		orphans: 3;
+		widows: 3;
+	}
+
+	h2,
+	h3 {
+		page-break-after: avoid;
+	}
+}

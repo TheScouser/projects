@@ -1,0 +1,494 @@
+/*
+ * Tables
+ */
+
+table {
+	width: 100%;
+	margin: 1em 0;
+	table-layout: fixed;
+	border-collapse: collapse;
+	border-spacing: 0;
+	border-right: 1px solid #f1f1f1;
+	border-bottom: 1px solid #f1f1f1;
+	word-wrap: break-word;
+	-ms-word-wrap: break-word;
+	*white-space: normal; 
+}
+
+table th,
+table td {
+	padding: 8px;
+	text-align: left;
+	vertical-align: top;
+	border-top: 1px solid #eee;
+	border-left: 1px solid #eee; 
+}
+
+table thead th,
+table tfoot th {
+	vertical-align: bottom;
+	background-color: #f1f1f1;
+	color: #333; 
+}
+
+table caption {
+	padding: 8px;
+	font-weight: normal;
+	font-style: normal;
+	border-bottom: 0; 
+}
+
+/*
+ * Lists styling and related list items.
+ */
+
+dl, menu, ol, ul {
+  margin: 1em 0; }
+
+dd,
+ul ul,
+ol ol,
+ul ol,
+ol ul {
+	margin: 0; 
+}
+
+dd {
+	margin-bottom: 1em; 
+}
+
+menu, ol, ul {
+	padding: 0 0 0 22px; 
+}
+
+nav ul, nav ol {
+	list-style: none;
+	list-style-image: none; 
+}
+
+/* Remove Styling from List */
+.unstyled-list, .inline-list {
+	list-style: none;
+	padding: 0;
+	margin: 0; 
+}
+	
+.unstyled-list li, .inline-list li {
+	margin-top: 0;
+	margin-bottom: 0; 
+}
+
+/*
+ * Input elements and defaults for buttns.
+ */
+
+label {
+	font-weight: bold;
+}
+
+label:hover {
+	cursor: pointer;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+	padding: .5em .8em;
+	min-width: 180px;
+	border: 1px solid #e0e0e0;
+	border-radius: 5px;
+	color: #999;
+	box-shadow: inset 0 1px 2px #eee
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus {
+	outline: none;
+	border: 1px solid #009cff;
+	color: #666;
+}
+
+
+/*
+ * 4.1. Buttons and other elements
+ * --------------------------------------------------------------------------
+ * In the most cases, these are the elements that can be reused. Just like
+ * styling custom dividers or boxes, thought the regular styling of these
+ * elements must be happening at 1. Typography. Here, they can be overwritten.
+ */
+
+.btn {
+	display: inline-block;
+	padding: .182em 1em;
+	border: 0;
+	background: #7b6a8f;
+	color: white;
+	text-align: center;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+	text-decoration: none;
+	font-size: .96em;
+	/* Make inputs the same size as normal text */
+	font-family: inherit;
+	/* Make inputs use the correct typeface instead of the browser default */
+	font-weight: bold;
+	cursor: pointer;
+	/* Inputs need pointers! */
+	overflow: visible;
+	/* IE fix */
+	width: auto;
+	/* IE fix */
+	line-height: 1.618em;
+	-webkit-appearance: none;
+	/* Remove iOS glare */
+	-webkit-box-sizing: border-box;
+	/* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;
+	/* Firefox, other Gecko */
+	box-sizing: border-box;
+	/* Opera/IE 8+ */
+	/*box-shadow: 2px 2px 3px 0 #ececec;
+	-webkit-box-shadow: 2px 2px 3px 0 #ececec;
+	-webkit-border-radius: 0.236em;*/
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	color: white;
+}
+
+/*
+ * Button sizes
+ */
+ 
+.btn.small {
+	padding: .1em 1em;
+	font-size: 12px;
+}
+
+.btn.big {
+	padding: .8em 1.8em;
+	font-size: 16px;
+}
+
+.btn.medium {
+	padding: .5em 1.2em;
+	font-size: 14px;
+}
+
+/*
+ * Button colors
+ */
+
+.green {
+	background: #82b541 !important; 
+}
+
+.blue {
+	background: #007eff !important; 
+}
+
+.red {
+	background: #d23b2d !important; 
+}
+
+.orange {
+	background: #fc6631 !important; 
+}
+
+.light-gray {
+	background: #ddd !important;
+}
+
+.gray {
+	background: #999999 !important; 
+}
+
+.dark {
+	background: #2d2d2d !important; 
+}
+
+.white {
+	background: #fff; color: #333; text-shadow: non !importante 
+}
+
+.blueAlt {
+	background: #374e88 !important; 
+}
+
+.redAlt, .redAlt {
+	background: #a21c1c !important; 
+}
+
+/*
+ * Button colors:hover and other actions
+ */
+
+.btn:hover {
+	color: white;
+	cursor: pointer;
+}
+
+.green:hover {
+	background: #92c94b !important; 
+}
+
+.blue:hover {
+	background: #3b9cff !important; 
+}
+
+.red:hover {
+	background: #ea5648 !important; 
+}
+
+.orange:hover {
+	background: #ff7d4f !important; 
+}
+
+.gray:hover {
+	background: #b3b3b3 !important; 
+}
+
+.dark:hover {
+	background: #4b4b4b !important; 
+}
+
+.white:hover {
+	background: #fff; color: #999; text-shadow: none !important; 
+}
+
+.blueAlt:hover {
+	background: #465e9a !important; 
+}
+
+.redAlt:hover {
+	background: #bb3232 !important; 
+}
+
+
+.btn:active {
+	color: white;
+	/* Animate buttons */
+	-moz-transition:.0s ease-out; 
+	-webkit-transition:.0s ease-out; 
+	transition:.0s ease-out;
+}
+
+.green:active {
+	background: #6ea22c !important; 
+}
+
+.blue:active {
+	background: #1e77d2 !important; 
+}
+
+.red:active {
+	background: #ba3528 !important; 
+}
+
+.orange:active {
+	background: #bb4c25 !important; 
+}
+
+.gray:active {
+	background: #7c7c7c !important; 
+}
+
+.dark:active {
+	background: #333333 !important; 
+}
+
+.white:active {
+	background: #f0f0f0; color: #666; text-shadow: none !important; 
+}
+
+.blueAlt:active {
+	background: #293e73 !important; 
+}
+
+.redAlt:active {
+	background: #8c1d1d !important; 
+}
+
+
+/*
+ * Circle stylings.
+ * 
+ * Those are elements, in which there is only one symbol. E.g. "1"
+ * Floats will break the layout for the circle element, so dont use 
+ * float:left; or right.
+ */
+
+.circle {
+	font-size: 16px;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+	vertical-align: middle;
+	border-radius: 50%;
+	display: table-cell;
+	width: 30px;
+	height: 30px;
+	padding-right: 2px;
+	padding-bottom: : 2px;
+	background: #000;
+}
+
+
+.circle-bullet {
+	width: 10px;
+	height: 10px;
+	display: inline-block;
+	border-radius: 50%;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Float left or right
+ */
+
+.pull-left { float: left; }
+.pull-right { float: right; }
+
+/*
+ * Float left or right
+ */
+
+.centralize { 
+	margin: 0 auto; 
+}
+
+/*
+ * Absolute centering objects.
+ */
+ 
+.absolute-center {
+	margin: auto;
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+}
+
+
+/*
+ * Use position: relative; element when needed just by
+ * adding a helper class.
+ */
+
+.section {
+	position: relative;
+}
+
+/*
+ * Create fullwidth element. Can be used for anything.
+ */
+
+.fullwidth {
+	width: 100%;
+}
+
+/*
+ * Set some text to be uppercase.
+ */
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+/*
+ * Image replacement
+ */
+
+.ir {
+	background-color: transparent;
+	border: 0;
+	overflow: hidden;
+	/* IE 6/7 fallback */
+	*text-indent: -9999px;
+}
+
+.ir:before {
+	content: "";
+	display: block;
+	width: 0;
+	height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+	display: none !important;
+	visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+	clip: auto;
+	height: auto;
+	margin: 0;
+	overflow: visible;
+	position: static;
+	width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+	visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+	content: " "; /* 1 */
+	display: table; /* 2 */
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+	*zoom: 1;
+}
