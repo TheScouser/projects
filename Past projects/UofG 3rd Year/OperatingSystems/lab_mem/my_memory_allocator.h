@@ -16,7 +16,7 @@
 
 #define END_OF_LIST (void *)-1
 #define NUM_CELLS 1000000
-#define CELL_SIZE sizeof(union Cell)
+#define CELL_SIZE 24
 
 /**
  * STEP 3.1: Define your type carefully.
@@ -64,6 +64,8 @@ void init_mem_pool(){
 		}
 		
 		current->next = END_OF_LIST;
+		last = first;
+		free_cell = last->next;
 		end = current;
 }
 
@@ -79,23 +81,14 @@ void init_mem_pool(){
  * NOTE: if no memory is available then return NULL
  */
 void *my_malloc(int num_bytes){
-	union Cell *current = last;
-	union Cell *previous = NULL;
-	
 
-	if(!last){
-		last = first;
-		free_cell = last->next;
-		return last;
-	}
-	else{
 		last = free_cell;
 		free_cell = free_cell->next;
 		if(free_cell == END_OF_LIST){
 			return NULL;
 		}
 		
-	}
+	
 	return last;
 }
 

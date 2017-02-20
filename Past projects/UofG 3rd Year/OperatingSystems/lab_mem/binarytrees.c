@@ -15,13 +15,13 @@
 
 #include "my_memory_allocator.h"
 
-//#define MALLOC   my_malloc
-//#define FREE     my_free
-//#define INIT_MEM init_mem_pool()
+#define MALLOC   my_malloc
+#define FREE     my_free
+#define INIT_MEM init_mem_pool()
 
-#define MALLOC   malloc
-#define FREE     free
-#define INIT_MEM 
+// #define MALLOC   malloc
+// #define FREE     free
+// #define INIT_MEM 
 
 // allocate a single tree node of @param size
 // and zero out all data bytes
