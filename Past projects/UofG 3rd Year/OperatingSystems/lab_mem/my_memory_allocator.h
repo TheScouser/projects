@@ -53,7 +53,7 @@ void init_mem_pool(){
 	int i;
 	for (i = 0; i < NUM_CELLS; ++i)
 		{	
-			block = (union Cell *) sbrk(CELL_SIZE+8);
+			block = (union Cell *) sbrk(CELL_SIZE);
 			if(i==0){
 				first = block;
 				current = first;
