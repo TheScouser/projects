@@ -50,8 +50,8 @@ union Cell *first,*end,*free_cell,*last;
 void init_mem_pool(){
 	union Cell *current = NULL;
 	union Cell *block = NULL;
-
-	for (int i = 0; i < NUM_CELLS; ++i)
+	int i;
+	for (i = 0; i < NUM_CELLS; ++i)
 		{	
 			block = (union Cell *) sbrk(CELL_SIZE+8);
 			if(i==0){
